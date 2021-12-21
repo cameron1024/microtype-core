@@ -46,3 +46,4 @@ pub trait SecretMicrotype: secrecy::ExposeSecret<Self::Inner> {
 }
 
 
+pub use secrecy;
