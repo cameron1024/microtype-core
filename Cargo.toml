@@ -1,6 +1,6 @@
 [package]
 name = "microtype-core"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 repository = "https://github.com/cameron1024/microtype-core"
 license = "MIT"
@@ -10,7 +10,8 @@ description = "Core traits for the microtype crate"
 
 [dependencies]
 secrecy = { version = "0.8" }
+serde = { version = "1.0", features = ["derive"], optional = true }
 
 [features]
-serde = ["secrecy/serde"]
+serde_support = ["secrecy/serde", "serde"]
 

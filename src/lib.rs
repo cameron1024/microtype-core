@@ -47,3 +47,5 @@ pub trait SecretMicrotype: secrecy::ExposeSecret<Self::Inner> {
 
 
 pub use secrecy;
+#[cfg(serde_support)]
+pub use serde;
