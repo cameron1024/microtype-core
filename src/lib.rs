@@ -45,5 +45,4 @@ pub trait SecretMicrotype: secrecy::ExposeSecret<Self::Inner> {
     fn new(inner: Self::Inner) -> Self;
 }
 
-
 pub use secrecy;

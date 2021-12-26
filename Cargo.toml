@@ -1,6 +1,6 @@
 [package]
 name = "microtype-core"
-version = "0.1.4"
+version = "0.1.5"
 edition = "2021"
 repository = "https://github.com/cameron1024/microtype-core"
 license = "MIT"
@@ -9,6 +9,7 @@ description = "Core traits for the microtype crate"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-secrecy = { version = "0.8", features = ["serde"] }
+secrecy = { version = "0.8" }
 
-
+[features]
+serde_support = ["secrecy/serde"]
