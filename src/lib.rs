@@ -1,3 +1,8 @@
+//! Core traits provided by the `microtype` crate
+
+#![deny(missing_docs)]
+#![warn(clippy::all)]
+
 /// A trait implemented by microtypes
 ///
 /// Provides some useful common functions for working with microtypes
